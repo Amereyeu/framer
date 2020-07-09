@@ -1,0 +1,45 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 2rem;
+
+  @include break($medium) {
+    margin: 3rem;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-family: $headings;
+    font-size: 2rem;
+    color: $color-secondary;
+    position: absolute;
+    text-shadow: 0 0 25px $color-primary;
+
+    @include break($medium) {
+      font-size: 3.2rem;
+    }
+  }
+
+  &__image {
+    width: 150px;
+    height: 150px;
+
+    @include break($medium) {
+      width: 250px;
+      height: 250px;
+    }
+
+    &__svg {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      stroke: #000;
+      fill: $color-secondary;
+      stroke-width: .5;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+    }
+  }
+}

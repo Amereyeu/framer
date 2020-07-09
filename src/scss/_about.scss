@@ -1,0 +1,25 @@
+.about,
+.footer {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  &__text {
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+  }
+}
+
+.footer {
+  text-align: center;
+  font-size: .9rem;
+  color: $color-primary;
+}
